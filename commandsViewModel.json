@@ -1,0 +1,57 @@
+{
+    "commands": {
+        "red-theme": {
+            "iconId": "cmdSettings",
+            "title": "{{i18n.red-themeTitle}}"
+        }
+    },
+    "commandHandlers": {
+        "red-themeHandler": {
+            "id": "red-theme",
+            "action": "setred-theme",
+            "activeWhen": true,
+            "visibleWhen": {
+                "condition": "conditions.supportsred-theme"
+            },
+            "selectWhen": {
+                "condition": "conditions.isred-theme"
+            }
+        }
+    },
+    "commandPlacements": {
+        "tc-awc-demo_Awp0ShowLightThemePlacement": {
+            "id": "Awp0ShowLightTheme",
+            "priority": 1,
+            "parentGroupId": "Awp0ChangeTheme"
+        },
+        "red-themePlacement": {
+            "id": "red-theme",
+            "uiAnchor": "aw_globalToolbar",
+            "priority": 3,
+            "parentGroupId": "Awp0ChangeTheme"
+        }
+    },
+    "actions": {
+        "setred-theme": {
+            "actionType": "JSFunction",
+            "method": "setTheme",
+            "inputData": {
+                "0": "ui-red-theme"
+            },
+            "deps": "js/theme.service"
+        }
+    },
+    "conditions": {
+        "supportsred-theme": {
+            "expression": "!ctx.changeThemeDisabled"
+        },
+        "isred-theme": {
+            "expression": "ctx.theme === 'ui-red-theme'"
+        }
+    },
+    "i18n": {
+        "red-themeTitle": [
+            "tc-awc-demoMessages"
+        ]
+    }
+}
