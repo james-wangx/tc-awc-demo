@@ -3,6 +3,11 @@
         "red-theme": {
             "iconId": "cmdSettings",
             "title": "{{i18n.red-themeTitle}}"
+        },
+        "myCommand": {
+            "iconId": "cmdWalk",
+            "title": "{{i18n.myCommandTitle}}",
+            "description": "{{i18n.myCommandDescription}}"
         }
     },
     "commandHandlers": {
@@ -15,6 +20,14 @@
             },
             "selectWhen": {
                 "condition": "conditions.isred-theme"
+            }
+        },
+        "myCommandHandler": {
+            "id": "myCommand",
+            "action": "activatemyCommand",
+            "activeWhen": true,
+            "visibleWhen": {
+                "condition": "conditions.true"
             }
         }
     },
@@ -29,6 +42,11 @@
             "uiAnchor": "aw_globalToolbar",
             "priority": 3,
             "parentGroupId": "Awp0ChangeTheme"
+        },
+        "myCommandaw_rightWall": {
+            "id": "myCommand",
+            "uiAnchor": "aw_rightWall",
+            "priority": 100
         }
     },
     "actions": {
@@ -39,6 +57,14 @@
                 "0": "ui-red-theme"
             },
             "deps": "js/theme.service"
+        },
+        "activatemyCommand": {
+            "actionType": "JSFunction",
+            "method": "alert",
+            "deps": "js/myCommandService",
+            "inputData": {
+                "text": "Hello myCommand!"
+            }
         }
     },
     "conditions": {
@@ -47,10 +73,19 @@
         },
         "isred-theme": {
             "expression": "ctx.theme === 'ui-red-theme'"
+        },
+        "objectIsSelected": {
+            "expression": "ctx.selected"
         }
     },
     "i18n": {
         "red-themeTitle": [
+            "tc-awc-demoMessages"
+        ],
+        "myCommandTitle": [
+            "tc-awc-demoMessages"
+        ],
+        "myCommandDescription": [
             "tc-awc-demoMessages"
         ]
     }

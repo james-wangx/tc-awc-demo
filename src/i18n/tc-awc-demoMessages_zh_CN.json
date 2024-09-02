@@ -2,5 +2,15 @@
     "red-themeTitle": "红色主题",
     "myLocationHeaderTitle": "myLocation",
     "myLocationBrowserTitle": "myLocation",
-    "myLocationBrowserSubTitle": "myLocation"
+    "myLocationBrowserSubTitle": "myLocation",
+    "mySubLocationTitle": "mySubLocation",
+    "mySubLocationChartTitle": "mySubLocation",
+    "header": "Header",
+    "body": "Body",
+    "footer": "Footer",
+    "checkBoxName": "Enable the OK button in footer",
+    "save": "Ok",
+    "textValue": "Contents here",
+    "myCommandTitle": "我的自定义命令",
+    "myCommandDescription": "自定义命令描述"
 }

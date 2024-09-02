@@ -4,5 +4,13 @@
     "myLocationBrowserTitle": "myLocation",
     "myLocationBrowserSubTitle": "myLocation",
     "mySubLocationTitle": "mySubLocation",
-    "mySubLocationChartTitle": "mySubLocation"
+    "mySubLocationChartTitle": "mySubLocation",
+    "header": "Header",
+    "body": "Body",
+    "footer": "Footer",
+    "checkBoxName": "Enable the OK button in footer",
+    "save": "Ok",
+    "textValue": "Contents here",
+    "myCommandTitle": "My Command",
+    "myCommandDescription": "My Command Description"
 }
