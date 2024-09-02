@@ -1,0 +1,35 @@
+{
+    "myLocation": {
+        "data": {
+            "browserTitle": {
+                "source": "/i18n/tc-awc-demoMessages",
+                "key": "myLocationBrowserTitle"
+            },
+            "browserSubTitle": {
+                "source": "/i18n/tc-awc-demoMessages",
+                "key": "myLocationBrowserSubTitle"
+            },
+            "headerTitle": {
+                "source": "/i18n/tc-awc-demoMessages",
+                "key": "myLocationHeaderTitle"
+            }
+        },
+        "view": "AwSearchLocation",
+        "parent": "root"
+    },
+    "mySubLocation": {
+        "data": {
+            "priority": 0,
+            "label": {
+                "source": "/i18n/tc-awc-demoMessages",
+                "key": "mySubLocationTitle"
+            }
+        },
+        "params": {
+            "filter": null
+        },
+        "parent": "myLocation",
+        "view": "mySubLocationPage",
+        "url": "/mySubLocation"
+    }
+}

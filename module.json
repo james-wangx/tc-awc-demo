@@ -1,6 +1,7 @@
 {
     "name": "tc-awc-demo",
     "description": "This is the tc-awc-demo module",
+    "skipTest": true,
     "themeExtensions": [
         "ui-red-theme"
     ]

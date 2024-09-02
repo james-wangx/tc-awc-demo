@@ -1,0 +1,30 @@
+{
+    "schemaVersion": "1.0.0",
+    "data": {
+        "_provider": {
+            "breadcrumbConfig": {
+                "vm" : "AwSearchBreadcrumb"
+            },
+            "priority": 0,
+            "label": {
+                "source": "/i18n/tc-awc-demoMessages",
+                "key": "mySubLocationTitle"
+            },
+            "clientScopeURI": "Awp0SearchResults",
+            "nameToken": "mySubLocation",
+            "context": {
+                "search": {
+                    "provider": "Awp0FullTextSearchProvider",
+                    "criteria": {
+                        "searchString" : "hdd"
+                    },
+                    "chartTitle": {
+                        "source": "/i18n/tc-awc-demoMessages",
+                        "key": "mySubLocationChartTitle"
+                    }
+                }
+            },
+            "viewBase": "mySubLocation"
+        }
+    }
+}
